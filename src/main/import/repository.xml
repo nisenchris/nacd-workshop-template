@@ -17,7 +17,7 @@
                  jcr:primaryType="jnt:folder">
                <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
                      jcr:primaryType="jnt:folder">
-                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
                              jcr:primaryType="jnt:folder">
                      <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                                    jcr:primaryType="jnt:nodeTypeFolder">
@@ -1559,7 +1559,7 @@
                </footercontent>
                <headercontent jcr:primaryType="jnt:contentList">
                   <layout-and-grid containerCssClass="container"
-                                   gridClasses="col-2,col-2,col-8"
+                                   gridClasses="col-4 col-lg-2, col-2, col-6 col-lg-8"
                                    gridLayout="fixed-width"
                                    jcr:mixinTypes="bootstrap4mix:createContainer bootstrap4mix:createRow bootstrap4mix:createSection bootstrap4mix:customGrid"
                                    jcr:primaryType="bootstrap4nt:grid"
@@ -1682,10 +1682,11 @@
                               </login>
                            </layout-and-grid>
                         </layout-and-grid>
-                        <layout-and-grid-1 jcr:mixinTypes="bootstrap4mix:createRow"
+                        <layout-and-grid-1 jcr:mixinTypes="bootstrap4mix:createRow bootstrap4mix:createSection"
                                            jcr:primaryType="bootstrap4nt:grid"
                                            rowHorizontalAlignment="justify-content-end"
                                            rowVerticalAlignment="default"
+                                           sectionElement="div"
                                            typeOfGrid="nogrid">
                            <layout-and-grid-1 jcr:mixinTypes="jmix:systemNameReadonly"
                                               jcr:primaryType="jnt:contentList">
@@ -1697,7 +1698,7 @@
                                         jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage"
                                         jcr:primaryType="bootstrap4nt:navbar"
                                         loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
-                                        navClass="navbar navbar-expand-lg nav-d navbar-light bg-ligh navfeatured"
+                                        navClass="navbar navbar-expand-lg nav-d bg-ligh navfeatured"
                                         root="customRootPage"/>
                            </layout-and-grid-1>
                         </layout-and-grid-1>
@@ -1712,8 +1713,9 @@
                               <navHome addContainerWithinTheNavbar="false"
                                        addLanguageButton="true"
                                        addLoginButton="false"
+                                       buttonClass="navbar-toggler navbar-toggler-right fa fa-bars"
                                        divClass="collapse navbar-collapse"
-                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar"
+                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customButtonNavbar"
                                        jcr:primaryType="bootstrap4nt:navbar"
                                        loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                        navClass="navbar navbar-expand-lg nav-d"

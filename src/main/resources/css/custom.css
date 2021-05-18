@@ -9,6 +9,10 @@
     background-color: #464646;
 }
 
+#header img {
+    padding-bottom: 10px;
+}
+
 .nav-d a.nav-link {
     font-family: Oswald,sans-serif;
     text-transform: uppercase;
@@ -18,8 +22,44 @@
     line-height: 1.6;
     letter-spacing: normal !important;
 }
+
+nav.navbar {
+    background-color: #464646 !important;
+}
+
 .navbar-nav .active>.nav-link {
     color: #70a3f2;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* span.navbar-toggler-icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+button.navbar-toggler.navbar-toggler-right {
+    background: transparent;
+    padding: 0;
+    font-size: 2rem;
+    width: 2.5rem;
+    line-height: 1;
+    border: 0;
+}
+
+.navbar-toggler-icon {
+    position: absolute;
 }
 
 .navfeatured a.nav-link {
@@ -50,6 +90,7 @@
     margin: 0;
     letter-spacing: normal;
 }
+
 .navlogin button {
     padding: 0;
     margin: .5rem;
