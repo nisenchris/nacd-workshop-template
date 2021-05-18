@@ -148,6 +148,11 @@
 
 [tint:card] > jnt:content, timix:content, timix:industrial, timix:linkTo
 [tint:damCard] > jnt:content, timix:damContent, timix:industrial, timix:linkTo
+
+[tint:hero] > jnt:content, timix:industrial
+ - text (string)
+ - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
+
 // CONTENT ***//
 
 
