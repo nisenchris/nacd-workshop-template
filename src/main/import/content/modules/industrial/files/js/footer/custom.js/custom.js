@@ -1,1 +1,1 @@
-console.log("je suis un script chargé dans le bottom du body")
+console.log("I am a script loaded in the footer")

@@ -1,1 +1,1 @@
-console.log("je suis un script chargé dans le header")
+console.log("I am a script loaded in the header")
