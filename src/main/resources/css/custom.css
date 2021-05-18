@@ -13,6 +13,10 @@
     padding-bottom: 10px;
 }
 
+.navbar-nav .active>.nav-link {
+    color: #70a3f2 !important;
+}
+
 .nav-d a.nav-link {
     font-family: Oswald,sans-serif;
     text-transform: uppercase;
@@ -25,10 +29,6 @@
 
 nav.navbar {
     background-color: #464646 !important;
-}
-
-.navbar-nav .active>.nav-link {
-    color: #70a3f2;
 }
 
 .fa {
