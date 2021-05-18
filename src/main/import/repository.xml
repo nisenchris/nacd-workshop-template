@@ -10,6 +10,24 @@
                   j:title="industrial"
                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                   jcr:primaryType="jnt:module">
+         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-industrial-2.1.4-SNAPSHOT">
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
+                 jcr:primaryType="jnt:folder">
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
+                     jcr:primaryType="jnt:folder">
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                             jcr:primaryType="jnt:folder">
+                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder"/>
+                     </jnt_template>
+                  </resources>
+               </main>
+            </src>
+         </sources>
          <portlets jcr:primaryType="jnt:portletFolder"/>
          <files jcr:primaryType="jnt:folder">
             <css jcr:primaryType="jnt:folder">
@@ -29,6 +47,16 @@
                   </custom.js>
                </header>
             </js>
+            <images jcr:primaryType="jnt:folder">
+               <NACD_LOGO.png j:height="584"
+                              j:width="1434"
+                              jcr:mixinTypes="jmix:image"
+                              jcr:primaryType="jnt:file">
+                  <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+               </NACD_LOGO.png>
+            </images>
          </files>
          <contents jcr:primaryType="jnt:contentFolder">
             <templates jcr:primaryType="jnt:contentFolder">
@@ -1615,10 +1643,10 @@
                      <layout-and-grid-col0 jcr:mixinTypes="jmix:systemNameReadonly"
                                            jcr:primaryType="jnt:contentList">
                         <logo j:linkType="internal"
-                              j:workInProgressStatus="DISABLED"
                               jcr:mixinTypes="jmix:internalLink"
                               jcr:primaryType="jnt:imageReferenceLink">
                            <j:translation_en j:linknode="#/sites/mySite/home"
+                                             j:node="#/modules/industrial/files/images/NACD_LOGO.png"
                                              jcr:language="en"
                                              jcr:mixinTypes="mix:title"
                                              jcr:primaryType="jnt:translation"

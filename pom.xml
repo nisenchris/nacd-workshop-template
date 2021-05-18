@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.jahia.modules</groupId>
@@ -14,27 +15,13 @@
   <description>This module is designed for marketers or communication team to create quickly and easily
     landing pages or microsites.</description>
   <scm>
-    <connection>scm:git:https://github.com/hduchesne/industrial.git</connection>
-    <developerConnection>scm:git:https://github.com/hduchesne/industrial.git</developerConnection>
+    <connection>scm:git:https://github.com/nisenchris/nacd-workshop-template.git</connection>
+    <developerConnection>scm:git:https://github.com/nisenchris/nacd-workshop-template.git</developerConnection>
     <url>https://github.com/hduchesne/industrial</url>
   </scm>
   <properties>
     <jahia-depends>animate,bootstrap4-components,bootstrap4-core,codemirror-editor,default,font-awesome,jquery,popperjs,widen-picker,jahia-authentication,jahia-oauth</jahia-depends>
   </properties>
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>jahia-public</id>
-      <name>Jahia Public Repository</name>
-      <url>https://devtools.jahia.com/nexus/content/groups/public</url>
-    </repository>
-  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.jahia.modules</groupId>
@@ -55,6 +42,20 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>jahia-public</id>
+      <name>Jahia Public Repository</name>
+      <url>https://devtools.jahia.com/nexus/content/groups/public</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>
