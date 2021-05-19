@@ -149,9 +149,19 @@
 [tint:card] > jnt:content, timix:content, timix:industrial, timix:linkTo
 [tint:damCard] > jnt:content, timix:damContent, timix:industrial, timix:linkTo
 
+// NACD ***//
 [tint:hero] > jnt:content, timix:industrial
  - text (string)
  - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
+
+[tint:profile] > jnt:content, timix:industrial 
+ - fullName (string)
+ - title (string)
+ - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
+ - bio (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
+
+// /NACD ***//
+
 
 // CONTENT ***//
 
