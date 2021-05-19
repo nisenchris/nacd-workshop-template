@@ -160,6 +160,12 @@
  - image (weakreference, picker[type='image']) < 'jmix:image'
  - bio (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
 
+[tint:testimonial] > jnt:content, timix:industrial 
+ - quote (string, textarea) mandatory internationalized
+ - fullName (string)
+ - title (string)
+ - image (weakreference, picker[type='image']) < 'jmix:image'
+
 // /NACD ***//
 
 
