@@ -5,7 +5,7 @@
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 
 
-<c:set var="body" value="${currentNode.properties.text.string}"/>
+<c:set var="title" value="${currentNode.properties['jcr:title'].string}"/>
 <c:set var="imageNode" value="${currentNode.properties.image.node}"/>
 
 <template:addCacheDependency node="${imageNode}"/>
@@ -38,6 +38,6 @@
 <div class="hero column bw" data-v-bb71eb2c=""
     style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('${imageURL}');">
     <div class="hero-content column-50" data-v-bb71eb2c="">
-        <p class="display-1 hero-title" data-v-bb71eb2c="">${body}</p>
+        <p class="display-1 hero-title" data-v-bb71eb2c="">${title}</p>
     </div>
 </div>

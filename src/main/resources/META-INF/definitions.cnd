@@ -150,8 +150,7 @@
 [tint:damCard] > jnt:content, timix:damContent, timix:industrial, timix:linkTo
 
 // NACD ***//
-[tint:hero] > jnt:content, timix:industrial
- - text (string)
+[tint:hero] > jnt:content, timix:industrial, mix:title
  - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
 
 [tint:profile] > jnt:content, timix:industrial 
