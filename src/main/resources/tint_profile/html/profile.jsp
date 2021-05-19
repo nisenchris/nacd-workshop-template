@@ -9,6 +9,7 @@
 <c:set var="title" value="${currentNode.properties.title.string}"/>
 <c:set var="bio" value="${currentNode.properties.bio.string}"/>
 <c:set var="imageNode" value="${currentNode.properties.image.node}"/>
+<c:set var="emptyImage" value="/files/default/modules/industrial/2.1.4-SNAPSHOT/sources/src/main/resources/images/NACD/emptyProfileImage.png"/>
 
 <template:addCacheDependency node="${imageNode}"/>
 <c:url var="imageURL" value="${imageNode.url}"/>
@@ -36,10 +37,15 @@
 
     ${body}
 </div> -->
-<a data-v-ad7469ae="" data-v-dc5bb76a="" href="#" class="profile-card column-25"
-    data-v-5ecfc389=""><img data-v-ad7469ae=""
-        src="${imageURL}"
-        alt="${fullName}">
+<a data-v-ad7469ae="" data-v-dc5bb76a="" href="#" class="profile-card column-25" data-v-5ecfc389="">
+    <c:choose>
+        <c:when test="${not empty imageNode}">
+            <img data-v-ad7469ae="" src="${imageURL}" alt="${fullName}">
+        </c:when>
+        <c:otherwise>
+            <img data-v-ad7469ae="" src="${emptyImage}" alt="${fullName}">
+        </c:otherwise>
+    </c:choose>
     <p data-v-ad7469ae="" class="h4 stack name">${fullName}</p>
     <p data-v-ad7469ae="" class="stack title">${title}</p>
 </a>

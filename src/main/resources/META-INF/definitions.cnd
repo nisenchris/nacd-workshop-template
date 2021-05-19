@@ -157,7 +157,7 @@
 [tint:profile] > jnt:content, timix:industrial 
  - fullName (string)
  - title (string)
- - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
+ - image (weakreference, picker[type='image']) < 'jmix:image'
  - bio (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
 
 // /NACD ***//
