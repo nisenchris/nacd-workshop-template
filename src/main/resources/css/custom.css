@@ -95,3 +95,77 @@ button.navbar-toggler.navbar-toggler-right {
     padding: 0;
     margin: .5rem;
 }
+
+/*************** SUB NAVIGATION *************/
+
+/* body.sub-nav {
+    color: #131516;
+    font-family: Open Sans,sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.5;
+} */
+
+nav.sub-nav {
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    margin:0 0 2rem;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    margin:0 0 2rem;
+    border-top:2px solid #8d8f90;
+    border-bottom: 2px solid #8d8f90;
+    margin-bottom:6rem !important;
+    background-color: #fff !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* .sub-nav li.nav-item.active {
+    background-color:#dc5a15;
+    color:#fff
+} */
+
+.sub-nav a {
+    -ms-flex:1 0 auto;
+    flex:1 0 auto;
+    padding:1rem 0;
+    line-height:1.2;
+    -ms-flex-align:center;
+    align-items:center;
+    display:-ms-flexbox;
+    display:flex;
+    /* border-bottom:2px solid #8d8f90;
+    border-top:2px solid #8d8f90; */
+    color:#131516 !important;
+    font-weight:700;
+    transition:background-color .25s;
+    -ms-flex-pack:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-family:Oswald,sans-serif
+}
+
+/* a.active[data-v-7dd7870e],a[data-v-7dd7870e]:hover{
+    background-color:#dc5a15;
+    color:#fff
+} */
+
+.sub-nav .navbar-nav .active .nav-link {
+    background-color:#dc5a15 !important;
+    color:#131516 !important
+}
+
+.sub-nav a:hover {
+    background-color:#dc5a15 !important;
+    color:#fff !important
+}
+
+.sub-nav .nav-item {
+    margin-bottom: 0px;
+}
+
+/*************** /SUB NAVIGATION *************/
