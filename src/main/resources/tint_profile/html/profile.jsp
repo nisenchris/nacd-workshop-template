@@ -9,7 +9,7 @@
 <c:set var="title" value="${currentNode.properties.title.string}"/>
 <c:set var="bio" value="${currentNode.properties.bio.string}"/>
 <c:set var="imageNode" value="${currentNode.properties.image.node}"/>
-<c:set var="emptyImage" value="/files/default/modules/industrial/2.1.4-SNAPSHOT/sources/src/main/resources/images/NACD/emptyProfileImage.png"/>
+<c:set var="emptyImage" value="/files/{workspace}/modules/industrial/2.1.4-SNAPSHOT/files/images/template/emptyProfile.png"/>
 
 <template:addCacheDependency node="${imageNode}"/>
 <c:url var="imageURL" value="${imageNode.url}"/>
