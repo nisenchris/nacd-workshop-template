@@ -52,14 +52,58 @@
                </header>
             </js>
             <images jcr:primaryType="jnt:folder">
-               <NACD_LOGO.png j:height="584"
-                              j:width="1434"
-                              jcr:mixinTypes="jmix:image"
-                              jcr:primaryType="jnt:file">
-                  <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                  <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-                  <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
-               </NACD_LOGO.png>
+               <template jcr:primaryType="jnt:folder">
+                  <emptyProfile.png j:height="280"
+                                    j:width="300"
+                                    jcr:mixinTypes="jmix:image"
+                                    jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  </emptyProfile.png>
+                  <typewriter.jpeg j:height="168"
+                                   j:width="320"
+                                   j:xresolution="72 dots"
+                                   j:yresolution="72 dots"
+                                   jcr:mixinTypes="jmix:exif jmix:image"
+                                   jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  </typewriter.jpeg>
+                  <Member-Advisor.jpeg j:height="692"
+                                       j:width="1367"
+                                       jcr:mixinTypes="jmix:image"
+                                       jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  </Member-Advisor.jpeg>
+                  <NACD_LOGO.png j:height="584"
+                                 j:width="1434"
+                                 jcr:mixinTypes="jmix:image"
+                                 jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                  </NACD_LOGO.png>
+                  <Resource-Center.jpeg j:height="692"
+                                        j:width="1367"
+                                        jcr:mixinTypes="jmix:image"
+                                        jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  </Resource-Center.jpeg>
+                  <Dship-footer.jpeg j:height="692"
+                                     j:width="1367"
+                                     jcr:mixinTypes="jmix:image"
+                                     jcr:primaryType="jnt:file">
+                     <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                     <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  </Dship-footer.jpeg>
+               </template>
             </images>
          </files>
          <contents jcr:primaryType="jnt:contentFolder">
@@ -1558,7 +1602,7 @@
                   <footer-content jcr:primaryType="jnt:bigText">
                      <j:translation_en jcr:language="en"
                                        jcr:primaryType="jnt:translation"
-                                       text="&lt;footer data-v-1e061012=&#34;&#34; data-v-46f65fd7=&#34;&#34; class=&#34;segment&#34;&gt;&#xA;    &lt;div data-v-1e061012=&#34;&#34; class=&#34;container&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;social-wrap&#34;&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-100-sm column-50-md social-wrap&#34;&gt;&#xA;                &lt;div data-v-1e061012=&#34;&#34; class=&#34;row social-container&#34;&gt;&#xA;                    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                            href=&#34;http://www.facebook.com/NACDVoice&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;                            class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-facebook&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;                    &lt;/div&gt;&#xA;                    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                            href=&#34;http://www.linkedin.com/company/83473&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;                            class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;                    &lt;/div&gt;&#xA;                    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34; href=&#34;http://twitter.com/NACD&#34;&#xA;                            target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34;&#xA;                                class=&#34;fa fa-twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                            href=&#34;https://www.instagram.com/nacdevents/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;                            class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34;&#xA;                                class=&#34;fa fa-instagram&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                            href=&#34;http://www.youtube.com/user/NACDVideos1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;                            class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-youtube&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;                    &lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;row&#34;&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-50-md footer-left&#34;&gt;&#xA;                &lt;p data-v-1e061012=&#34;&#34; class=&#34;footer address&#34;&gt;&#xA;                    National Association of Corporate Directors&lt;br data-v-1e061012=&#34;&#34;&gt; 1515 N. Courthouse Road, Suite&#xA;                    1200, &lt;span data-v-1e061012=&#34;&#34; class=&#34;mobile-break&#34;&gt;&lt;br data-v-1e061012=&#34;&#34;&gt;&lt;/span&gt;Arlington, VA&#xA;                    22201&lt;br data-v-1e061012=&#34;&#34;&gt;Phone: &lt;a data-v-1e061012=&#34;&#34; href=&#34;tel:571-367-3700&#34;&gt;571-367-3700&lt;/a&gt; |&#xA;                    Fax: 571-367-3699&lt;/p&gt;&#xA;            &lt;/div&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-50-md footer-right&#34;&gt;&#xA;                &lt;p data-v-1e061012=&#34;&#34; class=&#34;footer copyright&#34;&gt;© 2021 National Association of Corporate Directors.&lt;br&#xA;                        data-v-1e061012=&#34;&#34;&gt;&#xA;                    All rights reserved. &amp;nbsp; &lt;a data-v-1e061012=&#34;&#34; href=&#34;/content.cfm?itemnumber=1586&#34;&#xA;                        class=&#34;&#34;&gt;Privacy Policy&lt;/a&gt; &amp;nbsp; | &amp;nbsp; &lt;a data-v-1e061012=&#34;&#34;&#xA;                        href=&#34;/content.cfm?itemnumber=1587&#34; class=&#34;&#34;&gt;Terms of Use&lt;/a&gt;&lt;/p&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/footer&gt;"/>
+                                       text="&lt;div data-v-1e061012=&#34;&#34; class=&#34;row contain&#34;&gt;&#xA;    &lt;a data-v-1e061012=&#34;&#34; href=&#34;https://blog.nacdonline.org&#34; class=&#34;column-50-sm column-25-md column-25 department-link bw&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;department-link__background&#34; style=&#34;background-image: url(&amp;quot;/files/{workspace}/modules/industrial/2.1.4-SNAPSHOT/files/images/template/typewriter.jpeg&amp;quot;);&#34;&gt;&lt;/div&gt;&#xA;        &lt;h1 data-v-1e061012=&#34;&#34;&gt;BoardTalk Blog&lt;/h1&gt;&#xA;    &lt;/a&gt;&#xA;    &lt;a data-v-1e061012=&#34;&#34; href=&#34;mailto:MembershipAdvisor@NACDonline.org&#34; class=&#34;column-50-sm column-25-md column-25 department-link bw&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;department-link__background&#34; style=&#34;background-image: url(&amp;quot;/files/{workspace}/modules/industrial/2.1.4-SNAPSHOT/files/images/template/Member-Advisor.jpeg&amp;quot;);&#34;&gt;&lt;/div&gt;&#xA;        &lt;h1 data-v-1e061012=&#34;&#34;&gt;Membership Advisor&lt;/h1&gt;&#xA;    &lt;/a&gt;&#xA;    &lt;a data-v-1e061012=&#34;&#34; href=&#34;/insights/magazine&#34; class=&#34;column-50-sm column-25-md column-25 department-link bw&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;department-link__background&#34; style=&#34;background-image: url(&amp;quot;/files/{workspace}/modules/industrial/2.1.4-SNAPSHOT/files/images/template/Dship-footer.jpeg&amp;quot;);&#34;&gt;&lt;/div&gt;&#xA;        &lt;h1 data-v-1e061012=&#34;&#34;&gt;Directorship Magazine&lt;/h1&gt;&#xA;    &lt;/a&gt;&#xA;    &lt;a data-v-1e061012=&#34;&#34; href=&#34;/insights/board_resources.cfm&#34;&#xA;        class=&#34;column-50-sm column-25-md column-25 department-link bw&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;department-link__background&#34; style=&#34;background-image: url(&amp;quot;/files/{workspace}/modules/industrial/2.1.4-SNAPSHOT/files/images/template/Resource-Center.jpeg&amp;quot;);&#34;&gt;&lt;/div&gt;&#xA;        &lt;h1 data-v-1e061012=&#34;&#34;&gt;Resource Centers&lt;/h1&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div data-v-1e061012=&#34;&#34; class=&#34;social-wrap&#34;&gt;&#xA;    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-100-sm column-50-md social-wrap&#34;&gt;&#xA;        &lt;div data-v-1e061012=&#34;&#34; class=&#34;row social-container&#34;&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34; href=&#34;http://www.facebook.com/NACDVoice&#34;&#xA;                    target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34;&#xA;                        class=&#34;fa fa-facebook&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                    href=&#34;http://www.linkedin.com/company/83473&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i&#xA;                        data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34; href=&#34;http://twitter.com/NACD&#34;&#xA;                    target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34;&#xA;                        class=&#34;fa fa-twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                    href=&#34;https://www.instagram.com/nacdevents/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i&#xA;                        data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-instagram&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;            &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-20-sm&#34;&gt;&lt;a data-v-1e061012=&#34;&#34;&#xA;                    href=&#34;http://www.youtube.com/user/NACDVideos1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; class=&#34;social-link&#34;&gt;&lt;i&#xA;                        data-v-1e061012=&#34;&#34; aria-hidden=&#34;true&#34; class=&#34;fa fa-youtube&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div data-v-1e061012=&#34;&#34; class=&#34;row&#34;&gt;&#xA;    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-50-md footer-left&#34;&gt;&#xA;        &lt;p data-v-1e061012=&#34;&#34; class=&#34;footer address&#34;&gt;&#xA;            National Association of Corporate Directors&lt;br data-v-1e061012=&#34;&#34;&gt; 1515 N. Courthouse Road, Suite 1200,&#xA;            &lt;span data-v-1e061012=&#34;&#34; class=&#34;mobile-break&#34;&gt;&lt;br data-v-1e061012=&#34;&#34;&gt;&lt;/span&gt;Arlington, VA 22201&lt;br&#xA;                data-v-1e061012=&#34;&#34;&gt;Phone: &lt;a data-v-1e061012=&#34;&#34; href=&#34;tel:571-367-3700&#34;&gt;571-367-3700&lt;/a&gt; | Fax:&#xA;            571-367-3699&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div data-v-1e061012=&#34;&#34; class=&#34;column-50-md footer-right&#34;&gt;&#xA;        &lt;p data-v-1e061012=&#34;&#34; class=&#34;footer copyright&#34;&gt;© 2021 National Association of Corporate Directors.&lt;br&#xA;                data-v-1e061012=&#34;&#34;&gt;&#xA;            All rights reserved. &amp;nbsp; &lt;a data-v-1e061012=&#34;&#34; href=&#34;/content.cfm?itemnumber=1586&#34; class=&#34;&#34;&gt;Privacy&#xA;                Policy&lt;/a&gt; &amp;nbsp; | &amp;nbsp; &lt;a data-v-1e061012=&#34;&#34; href=&#34;/content.cfm?itemnumber=1587&#34; class=&#34;&#34;&gt;Terms of&#xA;                Use&lt;/a&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;"/>
                   </footer-content>
                </footercontent>
                <headercontent jcr:primaryType="jnt:contentList">
@@ -1650,7 +1694,7 @@
                               jcr:mixinTypes="jmix:internalLink"
                               jcr:primaryType="jnt:imageReferenceLink">
                            <j:translation_en j:linknode="#/sites/mySite/home"
-                                             j:node="#/modules/industrial/files/images/NACD_LOGO.png"
+                                             j:node="#/modules/industrial/files/images/template/NACD_LOGO.png"
                                              jcr:language="en"
                                              jcr:mixinTypes="mix:title"
                                              jcr:primaryType="jnt:translation"
