@@ -19,13 +19,13 @@
                      jcr:primaryType="jnt:folder">
                   <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
                              jcr:primaryType="jnt:folder">
-                     <css jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                     <css jcr:mixinTypes="jmix:hasExternalProviderExtension"
                           jcr:primaryType="jnt:cssFolder">
-                        <custom.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                        <custom.css jcr:primaryType="jnt:cssFile"/>
                      </css>
-                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
                                    jcr:primaryType="jnt:nodeTypeFolder">
-                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                               jcr:primaryType="jnt:templateTypeFolder"/>
                      </jnt_template>
                   </resources>
