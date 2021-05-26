@@ -151,6 +151,7 @@
 
 // NACD ***//
 [tint:hero] > jnt:content, timix:industrial, mix:title
+ - lead (string)
  - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
 
 [tint:profile] > jnt:content, timix:industrial 
