@@ -166,6 +166,10 @@
  - title (string)
  - image (weakreference, picker[type='image']) < 'jmix:image'
 
+ [tint:box] > jnt:content, timix:industrial, mix:title, timix:linkTo
+ - body (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
+ - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
+
 // /NACD ***//
 
 
