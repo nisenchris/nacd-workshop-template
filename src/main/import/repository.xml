@@ -10,28 +10,6 @@
                   j:title="industrial"
                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                   jcr:primaryType="jnt:module">
-         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
-                  jcr:primaryType="jnt:moduleVersionFolder"
-                  j:staticMountPointProviderKey="module-industrial-2.1.4-SNAPSHOT">
-            <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
-                 jcr:primaryType="jnt:folder">
-               <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl jmix:sourceControl"
-                     jcr:primaryType="jnt:folder">
-                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                             jcr:primaryType="jnt:folder">
-                     <css jcr:mixinTypes="jmix:hasExternalProviderExtension"
-                          jcr:primaryType="jnt:cssFolder">
-                        <custom.css jcr:primaryType="jnt:cssFile"/>
-                     </css>
-                     <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                                   jcr:primaryType="jnt:nodeTypeFolder">
-                        <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
-                              jcr:primaryType="jnt:templateTypeFolder"/>
-                     </jnt_template>
-                  </resources>
-               </main>
-            </src>
-         </sources>
          <portlets jcr:primaryType="jnt:portletFolder"/>
          <files jcr:primaryType="jnt:folder">
             <css jcr:primaryType="jnt:folder">
@@ -1693,8 +1671,7 @@
                         <logo j:linkType="internal"
                               jcr:mixinTypes="jmix:internalLink"
                               jcr:primaryType="jnt:imageReferenceLink">
-                           <j:translation_en j:linknode="#/sites/mySite/home"
-                                             j:node="#/modules/industrial/files/images/template/NACD_LOGO.png"
+                           <j:translation_en j:node="#/modules/industrial/files/images/template/NACD_LOGO.png"
                                              jcr:language="en"
                                              jcr:mixinTypes="mix:title"
                                              jcr:primaryType="jnt:translation"
@@ -2065,11 +2042,7 @@
                                               typeOfGrid="predefinedGrid">
                               <layout-and-grid-1-side jcr:mixinTypes="jmix:systemNameReadonly"
                                                       jcr:primaryType="jnt:contentList">
-                                 <rich-text jcr:primaryType="jnt:bigText">
-                                    <j:translation_en jcr:language="en"
-                                                      jcr:primaryType="jnt:translation"
-                                                      text="&lt;p&gt;List querying events from jContent here&lt;/p&gt;&#xA;"/>
-                                 </rich-text>
+                                 <lastevent jcr:primaryType="nacd:lastEvent" maxEvents="10"/>
                               </layout-and-grid-1-side>
                               <layout-and-grid-1-main jcr:mixinTypes="jmix:systemNameReadonly"
                                                       jcr:primaryType="jnt:contentList">

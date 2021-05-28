@@ -20,7 +20,7 @@
     <url>https://github.com/hduchesne/industrial</url>
   </scm>
   <properties>
-    <jahia-depends>animate,bootstrap4-components,bootstrap4-core,codemirror-editor,default,font-awesome,jquery,popperjs,widen-picker,jahia-authentication,jahia-oauth</jahia-depends>
+    <jahia-depends>animate,bootstrap4-components,bootstrap4-core,codemirror-editor,default,font-awesome,jquery,popperjs,widen-picker,jahia-authentication,jahia-oauth,salesforce-provider</jahia-depends>
   </properties>
   <dependencies>
     <dependency>

@@ -12,12 +12,12 @@
 
 <c:set var="siteNode" value="${renderContext.site}"/>
 <c:choose>
-    <c:when test="${jcr:isNodeType(siteNode, 'bootstrap4mix:siteBrand')}">
+    <c:when test="${not empty siteNode && !(jcr:isNodeType(siteNode, 'bootstrap4mix:siteBrand'))}">
         <c:set var="brandImage" value="${siteNode.properties.brandImage.node}"/>
         <c:set var="brandImageMobile" value="${siteNode.properties.brandImageMobile.node}"/>
         <c:set var="brandText" value="${siteNode.properties.brandText.string}"/>
     </c:when>
-    <c:when test="${jcr:isNodeType(currentNode, 'bootstrap4mix:brand')}">
+    <c:when test="${not empty currentNode && !(jcr:isNodeType(currentNode, 'bootstrap4mix:brand'))}">
         <c:set var="brandImage" value="${currentNode.properties.brandImage.node}"/>
         <c:set var="brandImageMobile" value="${currentNode.properties.brandImageMobile.node}"/>
         <c:set var="brandText" value="${currentNode.properties.brandText.string}"/>
