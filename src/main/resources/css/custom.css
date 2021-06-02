@@ -99,3 +99,7 @@ button.navbar-toggler.navbar-toggler-right {
 img.x-panel-inline-icon {
     width: auto;
 }
+
+footer {
+    margin-top: 60px;
+}
