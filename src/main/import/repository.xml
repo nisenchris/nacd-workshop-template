@@ -1720,7 +1720,8 @@
                                         addLoginButton="false"
                                         customRootPage="#/modules/industrial/featured"
                                         divClass="collapse navbar-collapse"
-                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage"
+                                        j:view="topnavfix"
+                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage jmix:renderable"
                                         jcr:primaryType="bootstrap4nt:navbar"
                                         loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                         navClass="navbar navbar-expand-lg nav-d bg-ligh navfeatured"
@@ -1740,7 +1741,8 @@
                                        addLoginButton="false"
                                        buttonClass="navbar-toggler navbar-toggler-right fa fa-bars"
                                        divClass="collapse navbar-collapse"
-                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar"
+                                       j:view="topnavfix"
+                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar jmix:renderable"
                                        jcr:primaryType="bootstrap4nt:navbar"
                                        loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                        navClass="navbar navbar-expand-lg nav-d"
@@ -2053,6 +2055,51 @@
                      </layout-and-grid>
                   </pagecontent>
                </nacd-events>
+               <nacd-speaker j:applyOn="nacd:speaker"
+                             j:defaultTemplate="true"
+                             j:hiddenTemplate="false"
+                             j:priority="1000"
+                             jcr:primaryType="jnt:contentTemplate">
+                  <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="NACD Speaker"/>
+                  <pagecontent jcr:mixinTypes="jmix:systemNameReadonly"
+                               jcr:primaryType="jnt:contentList">
+                     <layout-and-grid gridLayout="fixed-width"
+                                      jcr:mixinTypes="bootstrap4mix:createContainer"
+                                      jcr:primaryType="bootstrap4nt:grid">
+                        <layout-and-grid jcr:mixinTypes="jmix:systemNameReadonly"
+                                         jcr:primaryType="jnt:contentList">
+                           <absolute-area-sub-nav j:allowedTypes="bootstrap4nt:navbar"
+                                                  j:limitedAbsoluteAreaEdit="false"
+                                                  j:numberOfItems="1"
+                                                  j:subNodesView="nacd.top"
+                                                  jcr:primaryType="jnt:absoluteArea"/>
+                           <layout-and-grid-1 grid="3_9"
+                                              jcr:mixinTypes="bootstrap4mix:createRow bootstrap4mix:predefinedGrid"
+                                              jcr:primaryType="bootstrap4nt:grid"
+                                              rowHorizontalAlignment="default"
+                                              rowVerticalAlignment="default"
+                                              typeOfGrid="predefinedGrid">
+                              <layout-and-grid-1-side jcr:mixinTypes="jmix:systemNameReadonly"
+                                                      jcr:primaryType="jnt:contentList">
+                                 <back-to-event-page jcr:primaryType="jnt:backToParentPage">
+                                    <j:translation_en jcr:language="en"
+                                                      jcr:mixinTypes="mix:title"
+                                                      jcr:primaryType="jnt:translation"
+                                                      jcr:title="Back to event page"/>
+                                 </back-to-event-page>
+                              </layout-and-grid-1-side>
+                              <layout-and-grid-1-main jcr:mixinTypes="jmix:systemNameReadonly"
+                                                      jcr:primaryType="jnt:contentList">
+                                 <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                              </layout-and-grid-1-main>
+                           </layout-and-grid-1>
+                        </layout-and-grid>
+                     </layout-and-grid>
+                  </pagecontent>
+               </nacd-speaker>
             </base>
             <overview j:hiddenTemplate="false"
                       j:view="industrial"
