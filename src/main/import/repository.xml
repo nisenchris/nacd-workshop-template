@@ -3,7 +3,7 @@
          xmlns:jcr="http://www.jcp.org/jcr/1.0"
          xmlns:ti="http://www.jahia.org/template/b4/industrial/1.0">
    <modules jcr:primaryType="jnt:modules">
-      <industrial j:dependencies="animate bootstrap4-components bootstrap4-core codemirror-editor default font-awesome jahia-authentication jahia-oauth jquery popperjs salesforce-provider widen-picker"
+      <industrial j:dependencies="algolia-connector-jahia animate article bootstrap4-components bootstrap4-core codemirror-editor default font-awesome jahia-authentication jahia-oauth jquery popperjs salesforce-provider sample-oauth widen-picker"
                   j:installedModules="industrial"
                   j:modulePriority="0"
                   j:moduleType="templatesSet"
@@ -1671,7 +1671,8 @@
                         <logo j:linkType="internal"
                               jcr:mixinTypes="jmix:internalLink"
                               jcr:primaryType="jnt:imageReferenceLink">
-                           <j:translation_en j:node="#/modules/industrial/files/images/template/NACD_LOGO.png"
+                           <j:translation_en j:linknode="#/modules/industrial/home"
+                                             j:node="#/modules/industrial/files/images/template/NACD_LOGO.png"
                                              jcr:language="en"
                                              jcr:mixinTypes="mix:title"
                                              jcr:primaryType="jnt:translation"
@@ -1721,7 +1722,7 @@
                                         customRootPage="#/modules/industrial/featured"
                                         divClass="collapse navbar-collapse"
                                         j:view="topnavfix"
-                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage jmix:renderable"
+                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage"
                                         jcr:primaryType="bootstrap4nt:navbar"
                                         loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                         navClass="navbar navbar-expand-lg nav-d bg-ligh navfeatured"
@@ -1742,7 +1743,7 @@
                                        buttonClass="navbar-toggler navbar-toggler-right fa fa-bars"
                                        divClass="collapse navbar-collapse"
                                        j:view="topnavfix"
-                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar jmix:renderable"
+                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar"
                                        jcr:primaryType="bootstrap4nt:navbar"
                                        loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                        navClass="navbar navbar-expand-lg nav-d"
@@ -1995,7 +1996,6 @@
                               <tertiary-nav j:allowedTypes="bootstrap4nt:navbar nacd:lastEvent"
                                             j:limitedAbsoluteAreaEdit="false"
                                             j:numberOfItems="1"
-                                            j:subNodesView="nacd.side"
                                             jcr:primaryType="jnt:absoluteArea"/>
                               <rich-text jcr:primaryType="jnt:bigText">
                                  <j:translation_en jcr:language="en"
@@ -2055,6 +2055,62 @@
                      </layout-and-grid>
                   </pagecontent>
                </nacd-events>
+
+               <nacd-default j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                  <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="NACD Default"/>
+                  <pagecontent jcr:mixinTypes="jmix:systemNameReadonly"
+                               jcr:primaryType="jnt:contentList">
+                     <layout-and-grid-main gridLayout="fixed-width"
+                                           jcr:mixinTypes="bootstrap4mix:createContainer"
+                                           jcr:primaryType="bootstrap4nt:grid"/>
+                  </pagecontent>
+               </nacd-default>
+               <nacd-2-column j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                  <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="NACD 2 Column"/>
+                  <pagecontent jcr:mixinTypes="jmix:systemNameReadonly"
+                               jcr:primaryType="jnt:contentList">
+                     <layout-and-grid grid="3_9"
+                                      gridLayout="fixed-width"
+                                      jcr:mixinTypes="bootstrap4mix:createContainer bootstrap4mix:createRow bootstrap4mix:predefinedGrid"
+                                      jcr:primaryType="bootstrap4nt:grid"
+                                      rowHorizontalAlignment="default"
+                                      rowVerticalAlignment="default"
+                                      typeOfGrid="predefinedGrid"/>
+                  </pagecontent>
+               </nacd-2-column>
+               <article j:applyOn="jnt:article"
+                        j:defaultTemplate="true"
+                        j:hiddenTemplate="false"
+                        j:invertCondition="false"
+                        j:priority="100"
+                        j:requireLoggedUser="false"
+                        j:requirePrivilegedUser="false"
+                        j:requiredPermissionNames=""
+                        jcr:primaryType="jnt:contentTemplate">
+                  <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="Article"/>
+                  <pagecontent jcr:mixinTypes="jmix:systemNameReadonly"
+                               jcr:primaryType="jnt:contentList">
+                     <layout-and-grid grid="3_9"
+                                      jcr:mixinTypes="bootstrap4mix:createRow bootstrap4mix:predefinedGrid"
+                                      jcr:primaryType="bootstrap4nt:grid"
+                                      rowHorizontalAlignment="default"
+                                      rowVerticalAlignment="default"
+                                      typeOfGrid="predefinedGrid">
+                        <layout-and-grid-main jcr:mixinTypes="jmix:systemNameReadonly"
+                                              jcr:primaryType="jnt:contentList">
+                           <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </layout-and-grid-main>
+                     </layout-and-grid>
+                  </pagecontent>
+               </article>
                <nacd-speaker j:applyOn="nacd:speaker"
                              j:defaultTemplate="true"
                              j:hiddenTemplate="false"
