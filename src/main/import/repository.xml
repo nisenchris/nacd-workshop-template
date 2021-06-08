@@ -1992,7 +1992,7 @@
                                          typeOfGrid="predefinedGrid">
                            <layout-and-grid-side jcr:mixinTypes="jmix:systemNameReadonly"
                                                  jcr:primaryType="jnt:contentList">
-                              <tertiary-nav j:allowedTypes="bootstrap4nt:navbar"
+                              <tertiary-nav j:allowedTypes="bootstrap4nt:navbar nacd:lastEvent"
                                             j:limitedAbsoluteAreaEdit="false"
                                             j:numberOfItems="1"
                                             j:subNodesView="nacd.side"

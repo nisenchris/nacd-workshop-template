@@ -96,3 +96,10 @@ button.navbar-toggler.navbar-toggler-right {
     margin: .5rem;
 }
 
+img.x-panel-inline-icon {
+    width: auto;
+}
+
+footer {
+    margin-top: 60px;
+}

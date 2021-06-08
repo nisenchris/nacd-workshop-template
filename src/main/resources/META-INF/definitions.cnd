@@ -170,6 +170,11 @@
  - body (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
  - image (weakreference, picker[type='image']) mandatory < 'jmix:image'
 
+ [tint:priceCard] > jnt:content, timix:industrial, mix:title, timix:linkTo
+ - price (decimal) nofulltext
+ - info (string, richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/industrial/javascript/ckeditor/config/small.js']) internationalized
+
+
 // /NACD ***//
 
 
