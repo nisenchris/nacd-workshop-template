@@ -10,6 +10,23 @@
                   j:title="industrial"
                   jcr:mixinTypes="jmix:hasExternalProviderExtension"
                   jcr:primaryType="jnt:module">
+         <sources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-industrial-2.1.5-SNAPSHOT">
+            <src jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                 jcr:primaryType="jnt:folder">
+               <main jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                     jcr:primaryType="jnt:folder">
+                  <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                             jcr:primaryType="jnt:folder">
+                     <css jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                          jcr:primaryType="jnt:cssFolder">
+                        <nacd.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                     </css>
+                  </resources>
+               </main>
+            </src>
+         </sources>
          <portlets jcr:primaryType="jnt:portletFolder"/>
          <files jcr:primaryType="jnt:folder">
             <css jcr:primaryType="jnt:folder">
@@ -1778,7 +1795,8 @@
                                         addLoginButton="false"
                                         customRootPage="#/modules/industrial/featured"
                                         divClass="collapse navbar-collapse"
-                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage"
+                                        j:view="topnavfix"
+                                        jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customRootPage jmix:renderable"
                                         jcr:primaryType="bootstrap4nt:navbar"
                                         loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                         navClass="navbar navbar-expand-lg nav-d bg-ligh navfeatured"
@@ -1798,7 +1816,8 @@
                                        addLoginButton="false"
                                        buttonClass="navbar-toggler navbar-toggler-right fa fa-bars"
                                        divClass="collapse navbar-collapse"
-                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar"
+                                       j:view="topnavfix"
+                                       jcr:mixinTypes="bootstrap4mix:advancedNavbar bootstrap4mix:customBaseNavbar bootstrap4mix:customButtonNavbar jmix:renderable"
                                        jcr:primaryType="bootstrap4nt:navbar"
                                        loginMenuULClass="navbar-nav flex-row ml-md-auto d-none d-md-flex"
                                        navClass="navbar navbar-expand-lg nav-d"
