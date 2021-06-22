@@ -9,7 +9,7 @@
 <template:addResources type="javascript" resources="jquery.min.js"/>
 <template:addResources type="javascript" resources="popper.min.js"/>
 <template:addResources type="javascript" resources="bootstrap.min.js"/>
-asdasasdas
+
 <c:set var="siteNode" value="${renderContext.site}"/>
 <c:choose>
     <c:when test="${not empty siteNode &&  jcr:isNodeType(siteNode, 'bootstrap4mix:siteBrand')}">
